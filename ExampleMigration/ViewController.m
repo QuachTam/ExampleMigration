@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import <CoreData+MagicalRecord.h>
 #import "User.h"
-//#import "Contact.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSMutableArray *array;
@@ -35,10 +34,6 @@
             user.name = [NSString stringWithFormat:@"name_%ld", (long)arrayData.count];
             user.uuid = [NSString stringWithFormat:@"%ld", (long)arrayData.count+1];
             user.address = [NSString stringWithFormat:@"address_%ld", (long)arrayData.count];
-//            Contact *contact = [Contact MR_createInContext:localContext];
-//            contact.address = [NSString stringWithFormat:@"address_%ld", (long)arrayData.count];
-//            contact.phone = [NSString stringWithFormat:@"phone_%ld", (long)arrayData.count];
-//            [user addContactsObject:contact];
         }
     }];
     NSArray *arrayDataFind = [User MR_findAllSortedBy:@"uuid" ascending:YES inContext:[NSManagedObjectContext MR_defaultContext] ];
@@ -63,12 +58,6 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identify];
     }
     User *user = [self.array objectAtIndex:indexPath.row];
-//    Contact *contact;
-//    if (user.contacts.count) {
-//        contact = [[user.contacts allObjects] firstObject];
-//    }
-//    cell.textLabel.text = [NSString stringWithFormat:@"%@_%@", user.name, contact.address];
-//    cell.textLabel.text = [NSString stringWithFormat:@"%@", user.name];
     cell.textLabel.text = [NSString stringWithFormat:@"%@_%@", user.name, user.address];
     return cell;
 }
