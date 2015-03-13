@@ -34,7 +34,7 @@
             user = [User MR_createInContext:localContext];
             user.name = [NSString stringWithFormat:@"name_%ld", (long)arrayData.count];
             user.uuid = [NSString stringWithFormat:@"%ld", (long)arrayData.count+1];
-            user.address = [NSString stringWithFormat:@"address_%ld", (long)arrayData.count];
+//            user.address = [NSString stringWithFormat:@"address_%ld", (long)arrayData.count];
 //            Contact *contact = [Contact MR_createInContext:localContext];
 //            contact.address = [NSString stringWithFormat:@"address_%ld", (long)arrayData.count];
 //            contact.phone = [NSString stringWithFormat:@"phone_%ld", (long)arrayData.count];
@@ -68,8 +68,8 @@
 //        contact = [[user.contacts allObjects] firstObject];
 //    }
 //    cell.textLabel.text = [NSString stringWithFormat:@"%@_%@", user.name, contact.address];
-//    cell.textLabel.text = [NSString stringWithFormat:@"%@", user.name];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@_%@", user.name, user.address];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", user.name];
+//    cell.textLabel.text = [NSString stringWithFormat:@"%@_%@", user.name, user.address];
     return cell;
 }
 

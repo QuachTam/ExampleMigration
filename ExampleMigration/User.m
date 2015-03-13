@@ -11,7 +11,6 @@
 
 @implementation User
 
-@dynamic address;
 @dynamic name;
 
 @end

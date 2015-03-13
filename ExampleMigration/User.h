@@ -12,8 +12,6 @@
 
 
 @interface User : BaseEntity
-
-@property (nonatomic, retain) NSString * address;
 @property (nonatomic, retain) NSString * name;
 
 @end
