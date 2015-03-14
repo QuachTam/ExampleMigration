@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8BBD90897152A9A8FA44D540 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3156304366092625C60ACA02 /* libPods.a */; };
-		D942274C1AB2E5AB00E95928 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = D942274B1AB2E5AB00E95928 /* User.m */; };
 		D942274E1AB2E5C600E95928 /* Model1-2.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = D942274D1AB2E5C600E95928 /* Model1-2.xcmappingmodel */; };
+		D94227511AB2EF2C00E95928 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = D94227501AB2EF2C00E95928 /* Contact.m */; };
+		D94227541AB2EF2C00E95928 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = D94227531AB2EF2C00E95928 /* User.m */; };
+		D94227561AB2EF4A00E95928 /* Model2-3.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = D94227551AB2EF4A00E95928 /* Model2-3.xcmappingmodel */; };
 		D95C49AF1AB28B0E00CAA4A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D95C49AE1AB28B0E00CAA4A4 /* main.m */; };
 		D95C49B21AB28B0E00CAA4A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D95C49B11AB28B0E00CAA4A4 /* AppDelegate.m */; };
 		D95C49B51AB28B0E00CAA4A4 /* ExampleMigration.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D95C49B31AB28B0E00CAA4A4 /* ExampleMigration.xcdatamodeld */; };
@@ -36,9 +38,12 @@
 		0D07CD60BFFE4F6A43774783 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		3156304366092625C60ACA02 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E2617CBD7C952B16465D586 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		D942274A1AB2E5AB00E95928 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		D942274B1AB2E5AB00E95928 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		D942274D1AB2E5C600E95928 /* Model1-2.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = "Model1-2.xcmappingmodel"; sourceTree = "<group>"; };
+		D942274F1AB2EF2C00E95928 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		D94227501AB2EF2C00E95928 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		D94227521AB2EF2C00E95928 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		D94227531AB2EF2C00E95928 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		D94227551AB2EF4A00E95928 /* Model2-3.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = "Model2-3.xcmappingmodel"; sourceTree = "<group>"; };
 		D95C49A91AB28B0E00CAA4A4 /* ExampleMigration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleMigration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95C49AD1AB28B0E00CAA4A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D95C49AE1AB28B0E00CAA4A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -121,8 +126,6 @@
 		D95C49AB1AB28B0E00CAA4A4 /* ExampleMigration */ = {
 			isa = PBXGroup;
 			children = (
-				D942274A1AB2E5AB00E95928 /* User.h */,
-				D942274B1AB2E5AB00E95928 /* User.m */,
 				D95C49B01AB28B0E00CAA4A4 /* AppDelegate.h */,
 				D95C49B11AB28B0E00CAA4A4 /* AppDelegate.m */,
 				D95C49B61AB28B0E00CAA4A4 /* ViewController.h */,
@@ -133,9 +136,14 @@
 				D95C49BC1AB28B0E00CAA4A4 /* Images.xcassets */,
 				D95C49BE1AB28B0E00CAA4A4 /* LaunchScreen.xib */,
 				D95C49B31AB28B0E00CAA4A4 /* ExampleMigration.xcdatamodeld */,
+				D94227551AB2EF4A00E95928 /* Model2-3.xcmappingmodel */,
 				D942274D1AB2E5C600E95928 /* Model1-2.xcmappingmodel */,
 				D95C49D61AB28D3100CAA4A4 /* BaseEntity.m */,
 				D95C49D51AB28D3100CAA4A4 /* BaseEntity.h */,
+				D94227521AB2EF2C00E95928 /* User.h */,
+				D94227531AB2EF2C00E95928 /* User.m */,
+				D942274F1AB2EF2C00E95928 /* Contact.h */,
+				D94227501AB2EF2C00E95928 /* Contact.m */,
 				D95C49AC1AB28B0E00CAA4A4 /* Supporting Files */,
 			);
 			path = ExampleMigration;
@@ -302,8 +310,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D94227561AB2EF4A00E95928 /* Model2-3.xcmappingmodel in Sources */,
+				D94227511AB2EF2C00E95928 /* Contact.m in Sources */,
 				D95C49B51AB28B0E00CAA4A4 /* ExampleMigration.xcdatamodeld in Sources */,
-				D942274C1AB2E5AB00E95928 /* User.m in Sources */,
+				D94227541AB2EF2C00E95928 /* User.m in Sources */,
 				D95C49D71AB28D3100CAA4A4 /* BaseEntity.m in Sources */,
 				D95C49DD1AB28F7A00CAA4A4 /* MagicalRecord+Category.m in Sources */,
 				D95C49B21AB28B0E00CAA4A4 /* AppDelegate.m in Sources */,
@@ -524,7 +534,7 @@
 				D95C49DE1AB2911B00CAA4A4 /* ExampleMigration 2.xcdatamodel */,
 				D95C49B41AB28B0E00CAA4A4 /* ExampleMigration.xcdatamodel */,
 			);
-			currentVersion = D95C49DE1AB2911B00CAA4A4 /* ExampleMigration 2.xcdatamodel */;
+			currentVersion = D95C49E41AB2946D00CAA4A4 /* ExampleMigration 3.xcdatamodel */;
 			path = ExampleMigration.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

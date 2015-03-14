@@ -10,10 +10,19 @@
 #import <CoreData/CoreData.h>
 #import "BaseEntity.h"
 
+@class Contact;
 
 @interface User : BaseEntity
 
-@property (nonatomic, retain) NSString * address;
 @property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSSet *contacts;
+@end
+
+@interface User (CoreDataGeneratedAccessors)
+
+- (void)addContactsObject:(Contact *)value;
+- (void)removeContactsObject:(Contact *)value;
+- (void)addContacts:(NSSet *)values;
+- (void)removeContacts:(NSSet *)values;
 
 @end

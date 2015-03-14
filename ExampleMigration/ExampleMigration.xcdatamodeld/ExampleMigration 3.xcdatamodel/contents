@@ -14,7 +14,7 @@
     </entity>
     <elements>
         <element name="BaseEntity" positionX="-335" positionY="-441" width="128" height="60"/>
-        <element name="Contact" positionX="-101" positionY="-324" width="128" height="88"/>
+        <element name="Contact" positionX="-171" positionY="-277" width="128" height="88"/>
         <element name="User" positionX="-506" positionY="-306" width="128" height="73"/>
     </elements>
 </model>
