@@ -19,6 +19,7 @@
 		D95C49CC1AB28B0E00CAA4A4 /* ExampleMigrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D95C49CB1AB28B0E00CAA4A4 /* ExampleMigrationTests.m */; };
 		D95C49D71AB28D3100CAA4A4 /* BaseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = D95C49D61AB28D3100CAA4A4 /* BaseEntity.m */; };
 		D95C49DD1AB28F7A00CAA4A4 /* MagicalRecord+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = D95C49DC1AB28F7A00CAA4A4 /* MagicalRecord+Category.m */; };
+		D985FDD41AB8109C00CD91C8 /* Model1-2.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = D985FDD31AB8109C00CD91C8 /* Model1-2.xcmappingmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		D95C49DE1AB2911B00CAA4A4 /* ExampleMigration 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ExampleMigration 2.xcdatamodel"; sourceTree = "<group>"; };
 		D95C49E41AB2946D00CAA4A4 /* ExampleMigration 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ExampleMigration 3.xcdatamodel"; sourceTree = "<group>"; };
 		D95C4A011AB2CC6400CAA4A4 /* ExampleMigration 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ExampleMigration 4.xcdatamodel"; sourceTree = "<group>"; };
+		D985FDD31AB8109C00CD91C8 /* Model1-2.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = "Model1-2.xcmappingmodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				D95C49B91AB28B0E00CAA4A4 /* Main.storyboard */,
 				D95C49BC1AB28B0E00CAA4A4 /* Images.xcassets */,
 				D95C49BE1AB28B0E00CAA4A4 /* LaunchScreen.xib */,
+				D985FDD31AB8109C00CD91C8 /* Model1-2.xcmappingmodel */,
 				D95C49B31AB28B0E00CAA4A4 /* ExampleMigration.xcdatamodeld */,
 				D95C49D61AB28D3100CAA4A4 /* BaseEntity.m */,
 				D95C49D51AB28D3100CAA4A4 /* BaseEntity.h */,
@@ -305,6 +308,7 @@
 				D95C49DD1AB28F7A00CAA4A4 /* MagicalRecord+Category.m in Sources */,
 				D95C49B21AB28B0E00CAA4A4 /* AppDelegate.m in Sources */,
 				D95C49B81AB28B0E00CAA4A4 /* ViewController.m in Sources */,
+				D985FDD41AB8109C00CD91C8 /* Model1-2.xcmappingmodel in Sources */,
 				D95C49AF1AB28B0E00CAA4A4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
