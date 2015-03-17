@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8BBD90897152A9A8FA44D540 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3156304366092625C60ACA02 /* libPods.a */; };
+		D916B6211AB822130016463C /* Model1-2.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = D916B6201AB822130016463C /* Model1-2.xcmappingmodel */; };
 		D942274C1AB2E5AB00E95928 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = D942274B1AB2E5AB00E95928 /* User.m */; };
 		D95C49AF1AB28B0E00CAA4A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D95C49AE1AB28B0E00CAA4A4 /* main.m */; };
 		D95C49B21AB28B0E00CAA4A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D95C49B11AB28B0E00CAA4A4 /* AppDelegate.m */; };
@@ -19,7 +20,6 @@
 		D95C49CC1AB28B0E00CAA4A4 /* ExampleMigrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D95C49CB1AB28B0E00CAA4A4 /* ExampleMigrationTests.m */; };
 		D95C49D71AB28D3100CAA4A4 /* BaseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = D95C49D61AB28D3100CAA4A4 /* BaseEntity.m */; };
 		D95C49DD1AB28F7A00CAA4A4 /* MagicalRecord+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = D95C49DC1AB28F7A00CAA4A4 /* MagicalRecord+Category.m */; };
-		D9748ACE1AB816D700E58A50 /* Model1-2.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = D9748ACD1AB816D700E58A50 /* Model1-2.xcmappingmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,7 @@
 		0D07CD60BFFE4F6A43774783 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		3156304366092625C60ACA02 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E2617CBD7C952B16465D586 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D916B6201AB822130016463C /* Model1-2.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = "Model1-2.xcmappingmodel"; sourceTree = "<group>"; };
 		D942274A1AB2E5AB00E95928 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		D942274B1AB2E5AB00E95928 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		D95C49A91AB28B0E00CAA4A4 /* ExampleMigration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleMigration.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,7 +60,6 @@
 		D95C49DE1AB2911B00CAA4A4 /* ExampleMigration 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ExampleMigration 2.xcdatamodel"; sourceTree = "<group>"; };
 		D95C49E41AB2946D00CAA4A4 /* ExampleMigration 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ExampleMigration 3.xcdatamodel"; sourceTree = "<group>"; };
 		D95C4A011AB2CC6400CAA4A4 /* ExampleMigration 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ExampleMigration 4.xcdatamodel"; sourceTree = "<group>"; };
-		D9748ACD1AB816D700E58A50 /* Model1-2.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = "Model1-2.xcmappingmodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +132,7 @@
 				D95C49B91AB28B0E00CAA4A4 /* Main.storyboard */,
 				D95C49BC1AB28B0E00CAA4A4 /* Images.xcassets */,
 				D95C49BE1AB28B0E00CAA4A4 /* LaunchScreen.xib */,
-				D9748ACD1AB816D700E58A50 /* Model1-2.xcmappingmodel */,
+				D916B6201AB822130016463C /* Model1-2.xcmappingmodel */,
 				D95C49B31AB28B0E00CAA4A4 /* ExampleMigration.xcdatamodeld */,
 				D95C49D61AB28D3100CAA4A4 /* BaseEntity.m */,
 				D95C49D51AB28D3100CAA4A4 /* BaseEntity.h */,
@@ -308,7 +308,7 @@
 				D95C49DD1AB28F7A00CAA4A4 /* MagicalRecord+Category.m in Sources */,
 				D95C49B21AB28B0E00CAA4A4 /* AppDelegate.m in Sources */,
 				D95C49B81AB28B0E00CAA4A4 /* ViewController.m in Sources */,
-				D9748ACE1AB816D700E58A50 /* Model1-2.xcmappingmodel in Sources */,
+				D916B6211AB822130016463C /* Model1-2.xcmappingmodel in Sources */,
 				D95C49AF1AB28B0E00CAA4A4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
