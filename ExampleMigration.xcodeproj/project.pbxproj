@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8BBD90897152A9A8FA44D540 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3156304366092625C60ACA02 /* libPods.a */; };
-		D916B6251AB827BD0016463C /* Model2-3.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = D916B6241AB827BD0016463C /* Model2-3.xcmappingmodel */; };
 		D94227511AB2EF2C00E95928 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = D94227501AB2EF2C00E95928 /* Contact.m */; };
 		D94227541AB2EF2C00E95928 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = D94227531AB2EF2C00E95928 /* User.m */; };
 		D95C49AF1AB28B0E00CAA4A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D95C49AE1AB28B0E00CAA4A4 /* main.m */; };
@@ -21,7 +20,8 @@
 		D95C49CC1AB28B0E00CAA4A4 /* ExampleMigrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D95C49CB1AB28B0E00CAA4A4 /* ExampleMigrationTests.m */; };
 		D95C49D71AB28D3100CAA4A4 /* BaseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = D95C49D61AB28D3100CAA4A4 /* BaseEntity.m */; };
 		D95C49DD1AB28F7A00CAA4A4 /* MagicalRecord+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = D95C49DC1AB28F7A00CAA4A4 /* MagicalRecord+Category.m */; };
-		D985FDD61AB8112600CD91C8 /* Model1-2.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = D985FDD51AB8112600CD91C8 /* Model1-2.xcmappingmodel */; };
+		D97C2EFA1AB83272002D133A /* TagsMigrationPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = D97C2EF91AB83272002D133A /* TagsMigrationPolicy.m */; };
+		D97C2EFC1AB8336F002D133A /* Model2-3.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = D97C2EFB1AB8336F002D133A /* Model2-3.xcmappingmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		0D07CD60BFFE4F6A43774783 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		3156304366092625C60ACA02 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E2617CBD7C952B16465D586 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		D916B6241AB827BD0016463C /* Model2-3.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = "Model2-3.xcmappingmodel"; sourceTree = "<group>"; };
 		D942274F1AB2EF2C00E95928 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
 		D94227501AB2EF2C00E95928 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
 		D94227521AB2EF2C00E95928 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -64,7 +63,9 @@
 		D95C49DE1AB2911B00CAA4A4 /* ExampleMigration 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ExampleMigration 2.xcdatamodel"; sourceTree = "<group>"; };
 		D95C49E41AB2946D00CAA4A4 /* ExampleMigration 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ExampleMigration 3.xcdatamodel"; sourceTree = "<group>"; };
 		D95C4A011AB2CC6400CAA4A4 /* ExampleMigration 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ExampleMigration 4.xcdatamodel"; sourceTree = "<group>"; };
-		D985FDD51AB8112600CD91C8 /* Model1-2.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = "Model1-2.xcmappingmodel"; sourceTree = "<group>"; };
+		D97C2EF81AB83272002D133A /* TagsMigrationPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagsMigrationPolicy.h; sourceTree = "<group>"; };
+		D97C2EF91AB83272002D133A /* TagsMigrationPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagsMigrationPolicy.m; sourceTree = "<group>"; };
+		D97C2EFB1AB8336F002D133A /* Model2-3.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = "Model2-3.xcmappingmodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,8 +136,9 @@
 				D95C49B91AB28B0E00CAA4A4 /* Main.storyboard */,
 				D95C49BC1AB28B0E00CAA4A4 /* Images.xcassets */,
 				D95C49BE1AB28B0E00CAA4A4 /* LaunchScreen.xib */,
-				D985FDD51AB8112600CD91C8 /* Model1-2.xcmappingmodel */,
-				D916B6241AB827BD0016463C /* Model2-3.xcmappingmodel */,
+				D97C2EF81AB83272002D133A /* TagsMigrationPolicy.h */,
+				D97C2EF91AB83272002D133A /* TagsMigrationPolicy.m */,
+				D97C2EFB1AB8336F002D133A /* Model2-3.xcmappingmodel */,
 				D95C49B31AB28B0E00CAA4A4 /* ExampleMigration.xcdatamodeld */,
 				D95C49D61AB28D3100CAA4A4 /* BaseEntity.m */,
 				D95C49D51AB28D3100CAA4A4 /* BaseEntity.h */,
@@ -310,8 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D916B6251AB827BD0016463C /* Model2-3.xcmappingmodel in Sources */,
-				D985FDD61AB8112600CD91C8 /* Model1-2.xcmappingmodel in Sources */,
+				D97C2EFC1AB8336F002D133A /* Model2-3.xcmappingmodel in Sources */,
 				D94227511AB2EF2C00E95928 /* Contact.m in Sources */,
 				D95C49B51AB28B0E00CAA4A4 /* ExampleMigration.xcdatamodeld in Sources */,
 				D94227541AB2EF2C00E95928 /* User.m in Sources */,
@@ -320,6 +321,7 @@
 				D95C49B21AB28B0E00CAA4A4 /* AppDelegate.m in Sources */,
 				D95C49B81AB28B0E00CAA4A4 /* ViewController.m in Sources */,
 				D95C49AF1AB28B0E00CAA4A4 /* main.m in Sources */,
+				D97C2EFA1AB83272002D133A /* TagsMigrationPolicy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

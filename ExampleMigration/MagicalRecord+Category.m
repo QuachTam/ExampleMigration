@@ -34,7 +34,7 @@
     
     NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:
                              [NSNumber numberWithBool:YES], NSMigratePersistentStoresAutomaticallyOption,
-                             [NSNumber numberWithBool:YES], NSInferMappingModelAutomaticallyOption,
+                             [NSNumber numberWithBool:NO], NSInferMappingModelAutomaticallyOption,
                              sqliteOptions, NSSQLitePragmasOption,
                              nil];
     return options;
