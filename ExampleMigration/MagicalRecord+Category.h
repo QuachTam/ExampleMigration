@@ -9,6 +9,5 @@
 #import <MagicalRecord/CoreData+MagicalRecord.h>
 
 @interface MagicalRecord (Category)
-+ (void)setupCustomMigrateCoreDataStackWithStoreName:(NSString *)storeName;
-+ (void)setupCustomMigrateCoreDataStack;
++ (void) setupAutoMigratingCoreDataStack;
 @end

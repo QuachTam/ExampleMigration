@@ -9,35 +9,31 @@
 #import "MagicalRecord+Category.h"
 
 @implementation MagicalRecord (Category)
-+ (void)setupCustomMigrateCoreDataStackWithStoreName:(NSString *)storeName
+
++ (void) setupAutoMigratingCoreDataStack
+{
+    [self setupCoreDataStackWithAutoMigratingSqliteStoreNamed:[self defaultStoreName]];
+}
+
++ (void) setupCoreDataStackWithStoreNamed:(NSString *)storeName
 {
     if ([NSPersistentStoreCoordinator MR_defaultStoreCoordinator] != nil) return;
     
-    NSManagedObjectModel *model = [NSManagedObjectModel MR_defaultManagedObjectModel];
-    NSPersistentStoreCoordinator *coordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:model];
-    NSDictionary *options = [[self class] customMigrationOptions];
-    [coordinator MR_addSqliteStoreNamed:storeName withOptions:options];
+    NSPersistentStoreCoordinator *coordinator = [NSPersistentStoreCoordinator MR_coordinatorWithSqliteStoreNamed:storeName];
     [NSPersistentStoreCoordinator MR_setDefaultStoreCoordinator:coordinator];
     
     [NSManagedObjectContext MR_initializeDefaultContextWithCoordinator:coordinator];
 }
 
-+ (void)setupCustomMigrateCoreDataStack
++ (void) setupCoreDataStackWithAutoMigratingSqliteStoreNamed:(NSString *)storeName
 {
-    [self setupCustomMigrateCoreDataStackWithStoreName:[self defaultStoreName]];
+    if ([NSPersistentStoreCoordinator MR_defaultStoreCoordinator] != nil) return;
+    
+    NSPersistentStoreCoordinator *coordinator = [NSPersistentStoreCoordinator MR_coordinatorWithAutoMigratingSqliteStoreNamed:storeName];
+    [NSPersistentStoreCoordinator MR_setDefaultStoreCoordinator:coordinator];
+    
+    [NSManagedObjectContext MR_initializeDefaultContextWithCoordinator:coordinator];
 }
 
-+ (NSDictionary *)customMigrationOptions
-{
-    NSMutableDictionary *sqliteOptions = [NSMutableDictionary dictionary];
-    [sqliteOptions setObject:@"WAL" forKey:@"journal_mode"];
-    
-    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:
-                             [NSNumber numberWithBool:YES], NSMigratePersistentStoresAutomaticallyOption,
-                             [NSNumber numberWithBool:NO], NSInferMappingModelAutomaticallyOption,
-                             sqliteOptions, NSSQLitePragmasOption,
-                             nil];
-    return options;
-}
 
 @end

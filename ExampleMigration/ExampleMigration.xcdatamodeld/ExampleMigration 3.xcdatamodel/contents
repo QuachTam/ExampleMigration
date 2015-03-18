@@ -4,7 +4,7 @@
         <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Contact" representedClassName="Contact" parentEntity="BaseEntity" syncable="YES">
-        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="address" optional="YES" attributeType="Transformable" syncable="YES"/>
         <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="contacts" inverseEntity="User" syncable="YES"/>
     </entity>

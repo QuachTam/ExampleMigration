@@ -21,7 +21,7 @@
 		D95C49D71AB28D3100CAA4A4 /* BaseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = D95C49D61AB28D3100CAA4A4 /* BaseEntity.m */; };
 		D95C49DD1AB28F7A00CAA4A4 /* MagicalRecord+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = D95C49DC1AB28F7A00CAA4A4 /* MagicalRecord+Category.m */; };
 		D97C2EFA1AB83272002D133A /* TagsMigrationPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = D97C2EF91AB83272002D133A /* TagsMigrationPolicy.m */; };
-		D97C2EFC1AB8336F002D133A /* Model2-3.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = D97C2EFB1AB8336F002D133A /* Model2-3.xcmappingmodel */; };
+		D97C2F001AB83940002D133A /* Model1-2.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = D97C2EFF1AB83940002D133A /* Model1-2.xcmappingmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +65,7 @@
 		D95C4A011AB2CC6400CAA4A4 /* ExampleMigration 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ExampleMigration 4.xcdatamodel"; sourceTree = "<group>"; };
 		D97C2EF81AB83272002D133A /* TagsMigrationPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagsMigrationPolicy.h; sourceTree = "<group>"; };
 		D97C2EF91AB83272002D133A /* TagsMigrationPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagsMigrationPolicy.m; sourceTree = "<group>"; };
-		D97C2EFB1AB8336F002D133A /* Model2-3.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = "Model2-3.xcmappingmodel"; sourceTree = "<group>"; };
+		D97C2EFF1AB83940002D133A /* Model1-2.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = "Model1-2.xcmappingmodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +138,7 @@
 				D95C49BE1AB28B0E00CAA4A4 /* LaunchScreen.xib */,
 				D97C2EF81AB83272002D133A /* TagsMigrationPolicy.h */,
 				D97C2EF91AB83272002D133A /* TagsMigrationPolicy.m */,
-				D97C2EFB1AB8336F002D133A /* Model2-3.xcmappingmodel */,
+				D97C2EFF1AB83940002D133A /* Model1-2.xcmappingmodel */,
 				D95C49B31AB28B0E00CAA4A4 /* ExampleMigration.xcdatamodeld */,
 				D95C49D61AB28D3100CAA4A4 /* BaseEntity.m */,
 				D95C49D51AB28D3100CAA4A4 /* BaseEntity.h */,
@@ -312,11 +312,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D97C2EFC1AB8336F002D133A /* Model2-3.xcmappingmodel in Sources */,
 				D94227511AB2EF2C00E95928 /* Contact.m in Sources */,
 				D95C49B51AB28B0E00CAA4A4 /* ExampleMigration.xcdatamodeld in Sources */,
 				D94227541AB2EF2C00E95928 /* User.m in Sources */,
 				D95C49D71AB28D3100CAA4A4 /* BaseEntity.m in Sources */,
+				D97C2F001AB83940002D133A /* Model1-2.xcmappingmodel in Sources */,
 				D95C49DD1AB28F7A00CAA4A4 /* MagicalRecord+Category.m in Sources */,
 				D95C49B21AB28B0E00CAA4A4 /* AppDelegate.m in Sources */,
 				D95C49B81AB28B0E00CAA4A4 /* ViewController.m in Sources */,
