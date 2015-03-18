@@ -1,5 +1,5 @@
 //
-//  Doctor.h
+//  Communication.h
 //  ExampleMigration
 //
 //  Created by QSOFT on 3/18/15.
@@ -12,9 +12,9 @@
 
 @class Contact;
 
-@interface Doctor : BaseEntity
+@interface Communication : BaseEntity
 
-@property (nonatomic, retain) NSNumber * type;
+@property (nonatomic, retain) NSString * email;
 @property (nonatomic, retain) Contact *contact;
 
 @end

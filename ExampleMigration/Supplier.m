@@ -7,7 +7,7 @@
 //
 
 #import "Supplier.h"
-#import "Personal.h"
+#import "Contact.h"
 
 
 @implementation Supplier

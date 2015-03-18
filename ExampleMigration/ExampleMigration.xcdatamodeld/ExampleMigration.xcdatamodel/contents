@@ -19,9 +19,9 @@
     <entity name="Supplier" representedClassName="Supplier" parentEntity="Personal" syncable="YES"/>
     <elements>
         <element name="BaseEntity" positionX="-54" positionY="-9" width="128" height="58"/>
-        <element name="Personal" positionX="-326" positionY="-162" width="128" height="103"/>
         <element name="Doctor" positionX="-585" positionY="-54" width="128" height="58"/>
-        <element name="Supplier" positionX="-531" positionY="54" width="128" height="43"/>
+        <element name="Personal" positionX="-326" positionY="-162" width="128" height="103"/>
         <element name="Profile" positionX="-315" positionY="27" width="128" height="73"/>
+        <element name="Supplier" positionX="-531" positionY="54" width="128" height="43"/>
     </elements>
 </model>

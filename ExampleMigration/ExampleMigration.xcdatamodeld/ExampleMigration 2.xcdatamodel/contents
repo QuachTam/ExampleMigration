@@ -31,10 +31,10 @@
         <attribute name="fullName" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Profile" positionX="-315" positionY="15" width="128" height="133"/>
         <element name="BaseEntity" positionX="-108" positionY="-261" width="128" height="60"/>
         <element name="Doctor" positionX="-126" positionY="-0" width="128" height="118"/>
         <element name="Personal" positionX="-587" positionY="-279" width="128" height="103"/>
+        <element name="Profile" positionX="-315" positionY="15" width="128" height="133"/>
         <element name="Supplier" positionX="-585" positionY="-27" width="128" height="103"/>
     </elements>
 </model>

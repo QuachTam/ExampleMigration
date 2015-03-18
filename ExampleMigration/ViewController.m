@@ -8,11 +8,12 @@
 
 #import "ViewController.h"
 #import <CoreData+MagicalRecord.h>
-#import "Personal.h"
+#import "Contact.h"
 #import "Supplier.h"
 #import "Profile.h"
 #import "Doctor.h"
-
+//#import "Personal.h"
+#import "Communication.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSMutableArray *array;
@@ -39,8 +40,8 @@
             profile.uuid = [NSString stringWithFormat:@"%ld", (long)arrayData.count];
             profile.email = [NSString stringWithFormat:@"email %ld", (long)arrayData.count];
 //            profile.city  = [NSString stringWithFormat:@"profile city %ld", (long)arrayData.count];
-            
-            Supplier *supplier = [Supplier MR_createInContext:localContext];
+//            
+//            Supplier *supplier = [Supplier MR_createInContext:localContext];
 //            supplier.city = [NSString stringWithFormat:@"supplier city %ld", (long)arrayData.count];
         }
     }];
@@ -72,9 +73,13 @@
     }
     Profile *user = [self.array objectAtIndex:indexPath.row];
     Supplier *supplier = [self.arraySupplier objectAtIndex:indexPath.row];
+    NSArray *arrayCommunication = [user.contact.communicationList allObjects];
+    Communication *commu = [arrayCommunication firstObject];
     
 //    cell.textLabel.text = [NSString stringWithFormat:@"%@ - %@ - %@", user.email, user.city, supplier.city];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ - %@ - %@", user.email, user.contact.city, supplier.contact.city];
+//    cell.textLabel.text = [NSString stringWithFormat:@"%@ - %@ - %@", user.email, user.contact.city, supplier.contact.city];
+//    cell.textLabel.text = [NSString stringWithFormat:@"%@ - %@ - %@ - %@", user.email, user.contact.city, supplier.contact.city, user.contact.email];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ - %@ - %@ - %@", user.email, user.contact.city, supplier.contact.city, commu.email];
     return cell;
 }
 

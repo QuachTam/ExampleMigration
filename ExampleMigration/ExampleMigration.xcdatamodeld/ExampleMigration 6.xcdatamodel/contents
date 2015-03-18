@@ -3,11 +3,16 @@
     <entity name="BaseEntity" representedClassName="BaseEntity" isAbstract="YES" syncable="YES">
         <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="Communication" representedClassName="Communication" parentEntity="BaseEntity" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="contact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contact" inverseName="communicationList" inverseEntity="Contact" syncable="YES"/>
+    </entity>
     <entity name="Contact" representedClassName="Contact" parentEntity="BaseEntity" syncable="YES">
         <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="countryCode" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="county" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="fullName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="communicationList" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Communication" inverseName="contact" inverseEntity="Communication" syncable="YES"/>
         <relationship name="doctor" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Doctor" inverseName="contact" inverseEntity="Doctor" syncable="YES"/>
         <relationship name="profile" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Profile" inverseName="contact" inverseEntity="Profile" syncable="YES"/>
         <relationship name="supplier" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Supplier" inverseName="contact" inverseEntity="Supplier" syncable="YES"/>
@@ -26,9 +31,10 @@
     </entity>
     <elements>
         <element name="BaseEntity" positionX="-45" positionY="-99" width="128" height="60"/>
-        <element name="Contact" positionX="151" positionY="-22" width="128" height="148"/>
-        <element name="Doctor" positionX="-335" positionY="62" width="128" height="73"/>
-        <element name="Profile" positionX="-36" positionY="299" width="128" height="88"/>
+        <element name="Contact" positionX="295" positionY="45" width="128" height="163"/>
+        <element name="Doctor" positionX="-335" positionY="36" width="128" height="73"/>
+        <element name="Profile" positionX="-63" positionY="299" width="128" height="88"/>
         <element name="Supplier" positionX="-263" positionY="230" width="128" height="58"/>
+        <element name="Communication" positionX="376" positionY="287" width="128" height="73"/>
     </elements>
 </model>

@@ -10,12 +10,12 @@
 #import <CoreData/CoreData.h>
 #import "BaseEntity.h"
 
-@class Personal;
+@class Contact;
 
 @interface Profile : BaseEntity
 
 @property (nonatomic, retain) NSString * countryCodeOfPrefixPhone;
 @property (nonatomic, retain) NSString * email;
-@property (nonatomic, retain) Personal *contact;
+@property (nonatomic, retain) Contact *contact;
 
 @end

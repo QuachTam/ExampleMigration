@@ -25,10 +25,10 @@
         <relationship name="contact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Personal" inverseName="supplier" inverseEntity="Personal" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Profile" positionX="45" positionY="-324" width="128" height="88"/>
         <element name="BaseEntity" positionX="567" positionY="-123" width="128" height="60"/>
         <element name="Doctor" positionX="79" positionY="-154" width="128" height="73"/>
         <element name="Personal" positionX="-234" positionY="-130" width="128" height="148"/>
+        <element name="Profile" positionX="45" positionY="-324" width="128" height="88"/>
         <element name="Supplier" positionX="43" positionY="14" width="128" height="58"/>
     </elements>
 </model>

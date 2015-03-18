@@ -10,10 +10,10 @@
 #import <CoreData/CoreData.h>
 #import "BaseEntity.h"
 
-@class Personal;
+@class Contact;
 
 @interface Supplier : BaseEntity
 
-@property (nonatomic, retain) Personal *contact;
+@property (nonatomic, retain) Contact *contact;
 
 @end

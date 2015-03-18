@@ -7,7 +7,7 @@
 //
 
 #import "Profile.h"
-#import "Personal.h"
+#import "Contact.h"
 
 
 @implementation Profile
