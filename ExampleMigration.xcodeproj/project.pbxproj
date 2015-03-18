@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		8BBD90897152A9A8FA44D540 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3156304366092625C60ACA02 /* libPods.a */; };
-		D928D34B1AB913740066A545 /* Model2-3.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = D928D34A1AB913740066A545 /* Model2-3.xcmappingmodel */; };
-		D94227511AB2EF2C00E95928 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = D94227501AB2EF2C00E95928 /* Contact.m */; };
-		D94227541AB2EF2C00E95928 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = D94227531AB2EF2C00E95928 /* User.m */; };
+		D903786B1AB959ED0045D393 /* Model0-2.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = D903786A1AB959ED0045D393 /* Model0-2.xcmappingmodel */; };
+		D903786D1AB95B5F0045D393 /* Model2-3.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = D903786C1AB95B5F0045D393 /* Model2-3.xcmappingmodel */; };
+		D90378931AB963670045D393 /* Model3-4.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = D90378921AB963670045D393 /* Model3-4.xcmappingmodel */; };
+		D90378961AB963B00045D393 /* Personal.m in Sources */ = {isa = PBXBuildFile; fileRef = D90378951AB963B00045D393 /* Personal.m */; };
+		D90378991AB963B10045D393 /* Supplier.m in Sources */ = {isa = PBXBuildFile; fileRef = D90378981AB963B10045D393 /* Supplier.m */; };
+		D903789C1AB963B10045D393 /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = D903789B1AB963B10045D393 /* Profile.m */; };
+		D903789F1AB963B10045D393 /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = D903789E1AB963B10045D393 /* Doctor.m */; };
 		D95C49AF1AB28B0E00CAA4A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D95C49AE1AB28B0E00CAA4A4 /* main.m */; };
 		D95C49B21AB28B0E00CAA4A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D95C49B11AB28B0E00CAA4A4 /* AppDelegate.m */; };
 		D95C49B51AB28B0E00CAA4A4 /* ExampleMigration.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D95C49B31AB28B0E00CAA4A4 /* ExampleMigration.xcdatamodeld */; };
@@ -20,7 +24,6 @@
 		D95C49C01AB28B0E00CAA4A4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D95C49BE1AB28B0E00CAA4A4 /* LaunchScreen.xib */; };
 		D95C49CC1AB28B0E00CAA4A4 /* ExampleMigrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D95C49CB1AB28B0E00CAA4A4 /* ExampleMigrationTests.m */; };
 		D95C49D71AB28D3100CAA4A4 /* BaseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = D95C49D61AB28D3100CAA4A4 /* BaseEntity.m */; };
-		D95C49DD1AB28F7A00CAA4A4 /* MagicalRecord+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = D95C49DC1AB28F7A00CAA4A4 /* MagicalRecord+Category.m */; };
 		D97C2EFA1AB83272002D133A /* TagsMigrationPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = D97C2EF91AB83272002D133A /* TagsMigrationPolicy.m */; };
 /* End PBXBuildFile section */
 
@@ -38,11 +41,18 @@
 		0D07CD60BFFE4F6A43774783 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		3156304366092625C60ACA02 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E2617CBD7C952B16465D586 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		D928D34A1AB913740066A545 /* Model2-3.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = "Model2-3.xcmappingmodel"; sourceTree = "<group>"; };
-		D942274F1AB2EF2C00E95928 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
-		D94227501AB2EF2C00E95928 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
-		D94227521AB2EF2C00E95928 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		D94227531AB2EF2C00E95928 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		D903783B1AB93C4F0045D393 /* ExampleMigration-1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ExampleMigration-1.xcdatamodel"; sourceTree = "<group>"; };
+		D903786A1AB959ED0045D393 /* Model0-2.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = "Model0-2.xcmappingmodel"; sourceTree = "<group>"; };
+		D903786C1AB95B5F0045D393 /* Model2-3.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = "Model2-3.xcmappingmodel"; sourceTree = "<group>"; };
+		D90378921AB963670045D393 /* Model3-4.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = "Model3-4.xcmappingmodel"; sourceTree = "<group>"; };
+		D90378941AB963B00045D393 /* Personal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Personal.h; sourceTree = "<group>"; };
+		D90378951AB963B00045D393 /* Personal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Personal.m; sourceTree = "<group>"; };
+		D90378971AB963B10045D393 /* Supplier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Supplier.h; sourceTree = "<group>"; };
+		D90378981AB963B10045D393 /* Supplier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Supplier.m; sourceTree = "<group>"; };
+		D903789A1AB963B10045D393 /* Profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
+		D903789B1AB963B10045D393 /* Profile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profile.m; sourceTree = "<group>"; };
+		D903789D1AB963B10045D393 /* Doctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Doctor.h; sourceTree = "<group>"; };
+		D903789E1AB963B10045D393 /* Doctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
 		D95C49A91AB28B0E00CAA4A4 /* ExampleMigration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleMigration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95C49AD1AB28B0E00CAA4A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D95C49AE1AB28B0E00CAA4A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -59,8 +69,6 @@
 		D95C49CB1AB28B0E00CAA4A4 /* ExampleMigrationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleMigrationTests.m; sourceTree = "<group>"; };
 		D95C49D51AB28D3100CAA4A4 /* BaseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseEntity.h; sourceTree = "<group>"; };
 		D95C49D61AB28D3100CAA4A4 /* BaseEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseEntity.m; sourceTree = "<group>"; };
-		D95C49DB1AB28F7A00CAA4A4 /* MagicalRecord+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MagicalRecord+Category.h"; sourceTree = "<group>"; };
-		D95C49DC1AB28F7A00CAA4A4 /* MagicalRecord+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MagicalRecord+Category.m"; sourceTree = "<group>"; };
 		D95C49DE1AB2911B00CAA4A4 /* ExampleMigration 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ExampleMigration 2.xcdatamodel"; sourceTree = "<group>"; };
 		D95C49E41AB2946D00CAA4A4 /* ExampleMigration 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ExampleMigration 3.xcdatamodel"; sourceTree = "<group>"; };
 		D95C4A011AB2CC6400CAA4A4 /* ExampleMigration 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ExampleMigration 4.xcdatamodel"; sourceTree = "<group>"; };
@@ -131,21 +139,25 @@
 				D95C49B11AB28B0E00CAA4A4 /* AppDelegate.m */,
 				D95C49B61AB28B0E00CAA4A4 /* ViewController.h */,
 				D95C49B71AB28B0E00CAA4A4 /* ViewController.m */,
-				D95C49DB1AB28F7A00CAA4A4 /* MagicalRecord+Category.h */,
-				D95C49DC1AB28F7A00CAA4A4 /* MagicalRecord+Category.m */,
 				D95C49B91AB28B0E00CAA4A4 /* Main.storyboard */,
 				D95C49BC1AB28B0E00CAA4A4 /* Images.xcassets */,
 				D95C49BE1AB28B0E00CAA4A4 /* LaunchScreen.xib */,
 				D97C2EF81AB83272002D133A /* TagsMigrationPolicy.h */,
 				D97C2EF91AB83272002D133A /* TagsMigrationPolicy.m */,
-				D928D34A1AB913740066A545 /* Model2-3.xcmappingmodel */,
+				D903786A1AB959ED0045D393 /* Model0-2.xcmappingmodel */,
+				D903786C1AB95B5F0045D393 /* Model2-3.xcmappingmodel */,
+				D90378921AB963670045D393 /* Model3-4.xcmappingmodel */,
 				D95C49B31AB28B0E00CAA4A4 /* ExampleMigration.xcdatamodeld */,
+				D903789D1AB963B10045D393 /* Doctor.h */,
+				D903789E1AB963B10045D393 /* Doctor.m */,
+				D903789A1AB963B10045D393 /* Profile.h */,
+				D903789B1AB963B10045D393 /* Profile.m */,
+				D90378971AB963B10045D393 /* Supplier.h */,
+				D90378981AB963B10045D393 /* Supplier.m */,
+				D90378941AB963B00045D393 /* Personal.h */,
+				D90378951AB963B00045D393 /* Personal.m */,
 				D95C49D61AB28D3100CAA4A4 /* BaseEntity.m */,
 				D95C49D51AB28D3100CAA4A4 /* BaseEntity.h */,
-				D94227521AB2EF2C00E95928 /* User.h */,
-				D94227531AB2EF2C00E95928 /* User.m */,
-				D942274F1AB2EF2C00E95928 /* Contact.h */,
-				D94227501AB2EF2C00E95928 /* Contact.m */,
 				D95C49AC1AB28B0E00CAA4A4 /* Supporting Files */,
 			);
 			path = ExampleMigration;
@@ -312,14 +324,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D928D34B1AB913740066A545 /* Model2-3.xcmappingmodel in Sources */,
-				D94227511AB2EF2C00E95928 /* Contact.m in Sources */,
+				D903786D1AB95B5F0045D393 /* Model2-3.xcmappingmodel in Sources */,
 				D95C49B51AB28B0E00CAA4A4 /* ExampleMigration.xcdatamodeld in Sources */,
-				D94227541AB2EF2C00E95928 /* User.m in Sources */,
 				D95C49D71AB28D3100CAA4A4 /* BaseEntity.m in Sources */,
-				D95C49DD1AB28F7A00CAA4A4 /* MagicalRecord+Category.m in Sources */,
+				D90378991AB963B10045D393 /* Supplier.m in Sources */,
+				D903789F1AB963B10045D393 /* Doctor.m in Sources */,
+				D90378961AB963B00045D393 /* Personal.m in Sources */,
+				D90378931AB963670045D393 /* Model3-4.xcmappingmodel in Sources */,
 				D95C49B21AB28B0E00CAA4A4 /* AppDelegate.m in Sources */,
+				D903786B1AB959ED0045D393 /* Model0-2.xcmappingmodel in Sources */,
 				D95C49B81AB28B0E00CAA4A4 /* ViewController.m in Sources */,
+				D903789C1AB963B10045D393 /* Profile.m in Sources */,
 				D95C49AF1AB28B0E00CAA4A4 /* main.m in Sources */,
 				D97C2EFA1AB83272002D133A /* TagsMigrationPolicy.m in Sources */,
 			);
@@ -531,12 +546,13 @@
 		D95C49B31AB28B0E00CAA4A4 /* ExampleMigration.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				D903783B1AB93C4F0045D393 /* ExampleMigration-1.xcdatamodel */,
 				D95C4A011AB2CC6400CAA4A4 /* ExampleMigration 4.xcdatamodel */,
 				D95C49E41AB2946D00CAA4A4 /* ExampleMigration 3.xcdatamodel */,
 				D95C49DE1AB2911B00CAA4A4 /* ExampleMigration 2.xcdatamodel */,
 				D95C49B41AB28B0E00CAA4A4 /* ExampleMigration.xcdatamodel */,
 			);
-			currentVersion = D95C49E41AB2946D00CAA4A4 /* ExampleMigration 3.xcdatamodel */;
+			currentVersion = D95C4A011AB2CC6400CAA4A4 /* ExampleMigration 4.xcdatamodel */;
 			path = ExampleMigration.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

@@ -1,14 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="13F34" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="BaseEntity" representedClassName="BaseEntity" syncable="YES">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="14C109" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="BaseEntity" representedClassName="BaseEntity" isAbstract="YES" syncable="YES">
         <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="User" representedClassName="User" parentEntity="BaseEntity" syncable="YES">
-        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    <entity name="Doctor" representedClassName="Doctor" parentEntity="BaseEntity" syncable="YES">
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="county" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fullName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Personal" representedClassName="Personal" parentEntity="BaseEntity" syncable="YES">
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="county" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fullName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Profile" representedClassName="Profile" parentEntity="BaseEntity" syncable="YES">
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryCodeOfPrefixPhone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="county" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fullName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Supplier" representedClassName="Supplier" parentEntity="BaseEntity" syncable="YES">
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="county" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fullName" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="BaseEntity" positionX="-54" positionY="-9" width="128" height="60"/>
-        <element name="User" positionX="-342" positionY="-45" width="128" height="73"/>
+        <element name="Profile" positionX="-315" positionY="15" width="128" height="133"/>
+        <element name="BaseEntity" positionX="-108" positionY="-261" width="128" height="60"/>
+        <element name="Doctor" positionX="-126" positionY="-0" width="128" height="118"/>
+        <element name="Personal" positionX="-587" positionY="-279" width="128" height="103"/>
+        <element name="Supplier" positionX="-585" positionY="-27" width="128" height="103"/>
     </elements>
 </model>

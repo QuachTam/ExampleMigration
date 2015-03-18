@@ -8,11 +8,15 @@
 
 #import "ViewController.h"
 #import <CoreData+MagicalRecord.h>
-#import "User.h"
-#import "Contact.h"
+#import "Personal.h"
+#import "Supplier.h"
+#import "Profile.h"
+#import "Doctor.h"
+
 
 @interface ViewController ()
 @property (nonatomic, strong) NSMutableArray *array;
+@property (nonatomic, strong) NSMutableArray *arraySupplier;
 @end
 
 @implementation ViewController
@@ -26,29 +30,34 @@
 }
 
 - (void)save{
-    NSArray *arrayData = [User MR_findAllInContext:[NSManagedObjectContext MR_defaultContext]];
+    NSArray *arrayData = [Profile MR_findAllInContext:[NSManagedObjectContext MR_defaultContext]];
     [MagicalRecord saveWithBlockAndWait:^(NSManagedObjectContext *localContext) {
         NSPredicate *predicate = [NSPredicate predicateWithFormat:@"uuid=%ld", arrayData.count+1];
-        User *user = [User MR_findFirstWithPredicate:predicate inContext:localContext];
-        if (!user) {
-            user = [User MR_createInContext:localContext];
-            user.name = [NSString stringWithFormat:@"name_%ld", (long)arrayData.count];
-            user.uuid = [NSString stringWithFormat:@"%ld", (long)arrayData.count+1];
-            Contact *contact = [Contact MR_createInContext:localContext];
-            contact.address = [NSString stringWithFormat:@"address_%ld", (long)arrayData.count];
-            contact.phone = [NSString stringWithFormat:@"phone_%ld", (long)arrayData.count];
-            [user addContactsObject:contact];
+        Profile *profile = [Profile MR_findFirstWithPredicate:predicate inContext:localContext];
+        if (!profile) {
+            profile = [Profile MR_createInContext:localContext];
+            profile.uuid = [NSString stringWithFormat:@"%ld", (long)arrayData.count];
+            profile.email = [NSString stringWithFormat:@"email %ld", (long)arrayData.count];
+//            profile.city  = [NSString stringWithFormat:@"profile city %ld", (long)arrayData.count];
+            
+            Supplier *supplier = [Supplier MR_createInContext:localContext];
+//            supplier.city = [NSString stringWithFormat:@"supplier city %ld", (long)arrayData.count];
         }
     }];
-    NSArray *arrayDataFind = [User MR_findAllSortedBy:@"uuid" ascending:YES inContext:[NSManagedObjectContext MR_defaultContext] ];
+    NSArray *arrayDataFind = [Profile MR_findAllSortedBy:@"uuid" ascending:YES inContext:[NSManagedObjectContext MR_defaultContext] ];
     [self.array removeAllObjects];
     self.array = [NSMutableArray arrayWithArray:arrayDataFind];
+    
+    NSArray *arrayDataSupplier = [Supplier MR_findAllSortedBy:@"uuid" ascending:YES inContext:[NSManagedObjectContext MR_defaultContext] ];
+    self.arraySupplier = [NSMutableArray arrayWithArray:arrayDataSupplier];
     [self.tbView reloadData];
 }
 
 - (void)getDataBase {
-    NSArray *arrayData = [User MR_findAllSortedBy:@"uuid" ascending:YES inContext:[NSManagedObjectContext MR_defaultContext] ];
+    NSArray *arrayData = [Profile MR_findAllSortedBy:@"uuid" ascending:YES inContext:[NSManagedObjectContext MR_defaultContext] ];
+    NSArray *arrayDataSupplier = [Supplier MR_findAllSortedBy:@"uuid" ascending:YES inContext:[NSManagedObjectContext MR_defaultContext] ];
     self.array = [[NSMutableArray alloc] initWithArray:arrayData];
+    self.arraySupplier = [[NSMutableArray alloc] initWithArray:arrayDataSupplier];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -61,12 +70,11 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identify];
     }
-    User *user = [self.array objectAtIndex:indexPath.row];
-    Contact *contact;
-    if (user.contacts.count) {
-        contact = [[user.contacts allObjects] firstObject];
-    }
-    cell.textLabel.text = [NSString stringWithFormat:@"%@_%@", user.name, contact.address];
+    Profile *user = [self.array objectAtIndex:indexPath.row];
+    Supplier *supplier = [self.arraySupplier objectAtIndex:indexPath.row];
+    
+//    cell.textLabel.text = [NSString stringWithFormat:@"%@ - %@ - %@", user.email, user.city, supplier.city];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ - %@ - %@", user.email, user.contact.city, supplier.contact.city];
     return cell;
 }
 
